@@ -9,8 +9,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="icon" href="./imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Ahmed Mamdouh</title>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-scrollspy">
@@ -53,88 +56,68 @@
     </nav>
 
     <header id="home" class="home vh-100 ">
-        <div class="container-md container-fluid">
-            <div class="d-flex justify-content-center align-items-center text-center vh-100">
-                <div class="section-content">
-                    <h1 class="text-white text-capitalize fw-bolder pb-2">
-                        hello
-                    </h1>
-                    <p class="text-white text-capitalize pt-2 fw-lighter align-self-start">I Am </p>
-                    <div class="icons pt-3 d-flex justify-content-center">
-                        <a href="#" class="mx-1"><span><i class="fa-brands fa-facebook-f text-white"></i></span></a>
-                        <a href="#" class="mx-1"><span><i class="fa-brands fa-twitter text-white"></i></span></a>
-                        <a href="#" class="mx-1"><span><i class="fa-brands fa-linkedin-in text-white"></i></span></a>
-                        <a href="#" class="mx-1"><span><i class="fa-brands fa-behance text-white"></i></span></a>
-                        <a href="#" class="mx-1"><span><i class="fa-brands fa-youtube text-white"></i></span></a>
-                    </div>
+        <div id="particles-js"></div>
+
+        <div
+            class="d-flex z-3 position-absolute top-50 start-50 translate-middle justify-content-center align-items-center text-center">
+            <div class="section-content">
+                <h1 class="text-white text-capitalize fw-bolder pb-2">
+                    hello
+                </h1>
+                <p class="element text-white text-capitalize pt-2 fw-lighter align-self-start">
+                </p>
+                <div class="icons pt-3 d-flex justify-content-center">
+                    <a title="My facebook" target="_blank"
+                        href="https://www.facebook.com/profile.php?id=100009304071055" class="mx-1"><span><i
+                                class="fa-brands fa-facebook-f text-white"></i></span></a>
+                    <a title="My linkedIn profile" target="_blank"
+                        href="https://www.linkedin.com/in/ahmed-shalaby-b01684252/" class="mx-1"><span><i
+                                class="fa-brands fa-linkedin-in text-white"></i></span></a>
+                    <a title="My github profile" target="_blank" href="https://github.com/AhmedMamdouhShalaby"
+                        class="mx-1"><span><i class="fa-brands fa-github text-white"></i></span></a>
+                    <a title="My instagram profile" target="_blank" href="https://www.instagram.com/ahmed_mamdouh.a/"
+                        class="mx-1"><span><i class="fa-brands fa-instagram text-white"></i></span></a>
                 </div>
             </div>
         </div>
     </header>
-    <section class="about py-5" id="about">
+    <section class="about py-5 wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s" id="about">
         <div class="container-md container-fluid">
             <div class="row pt-5">
                 <div class="col-lg-5">
                     <div class="about-img mb-3 position-relative ps-4">
-                        <img src="imgs/hero.jpg" class="w-100 h-auto" alt="my photo" />
+                        <img src="imgs/IMG_20241006_011509_601.jpg" class="rounded rounded-3 w-100 h-auto"
+                            alt="my photo" />
                     </div>
                 </div>
                 <div class="col-lg-7 mt-sm-5 mt-lg-0">
                     <div class="about-content">
                         <h2 class="text-capitalize fw-bold fs-2">about me.</h2>
-                        <p class="text-muted lead text-uppercase fs-6">UI / UX DESIGNER & WEB DEVELOPER</p>
-                        <p class="text-muted lead pt-3 fs-6">I am <span class="fw-bold">Jerry Daniels</span> Lorem Ipsum
-                            is
-                            simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                            industry's standard dummy text ever It has survived not only five centuries, but also the
-                            leap into electronic but also the leap into electronic typesetting, remaining essentially
-                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                        <p class="text-muted lead text-uppercase fs-6">FULL STACK DEVELOPER (C# & ANGULAR)
+                        </p>
+                        <p class="text-muted lead pt-3 fs-6">I am <span class="fw-bold">Ahmed Mamdouh</span> , a
+                            passionate Full Stack Developer with expertise in building dynamic web
+                            applications using C# and Angular. With a solid foundation in both front-end and back-end
+                            development, I strive to create seamless user experiences and robust server-side logic. My
+                            journey in software development has equipped me with a deep understanding of RESTful API
+                            design, database management, and responsive web design principles. I believe in writing
+                            clean, maintainable code and utilizing best practices to ensure the scalability and
+                            performance of my applications. Continuously learning and adapting to new technologies, I am
+                            committed to delivering high-quality solutions that meet both user needs and business goals.
                         </p>
                     </div>
-                    <div class="skills mt-5">
-                        <div class="item py-3">
-                            <div class="progress overflow-visible h-auto" role="progressbar"
-                                aria-label="Example with label" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar text-capitalize bg-black py-1 px-2 d-flex justify-content-between flex-row  rounded-2 fw-medium"
-                                    style="width: 95%">
-                                    <span>web design</span>
-                                    <span>95%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item py-3">
-                            <div class="progress overflow-visible h-auto" role="progressbar"
-                                aria-label="Example with label" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar text-capitalize bg-black py-1 px-2 d-flex justify-content-between flex-row  rounded-2 fw-medium"
-                                    style="width: 80%">
-                                    <span>brandig</span>
-                                    <span>80%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item py-3">
-                            <div class="progress overflow-visible h-auto" role="progressbar"
-                                aria-label="Example with label" aria-valuenow="25" aria-valuemin="0"
-                                aria-valuemax="100">
-                                <div class="progress-bar text-capitalize bg-black py-1 px-2 d-flex justify-content-between flex-row  rounded-2 fw-medium"
-                                    style="width: 90%">
-                                    <span>development</span>
-                                    <span>90%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="grp-btns mt-4">
                         <button
                             class="btn-one text-capitalize fw-light bg-black fw-normal border border-1 border-black rounded-2 py-2 px-4"><a
-                                href="#" download class="text-decoration-none px-2 text-white"><span>download
+                                href="imgs/Ahmed Mamdouh New CV.pdf" download
+                                class="text-decoration-none px-2 text-white"><span>download
                                     c.v</span></a>
                         </button>
                         <button
                             class="btn-two text-capitalize fw-light bg-white fw-normal  border border-1 border-black rounded-2 py-2 px-4"><a
-                                href="#" class="text-decoration-none text-black px-2"><span>contact me</span></a>
+                                href="mailto:ahmedmamdouhahmed444@gmail.com?subject=Inquiry&body=Hello Ahmed,"
+                                class="text-decoration-none text-black px-2"><span>contact me</span></a>
 
                         </button>
                     </div>
@@ -779,6 +762,13 @@
         </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/typed.js/dist/typed.umd.js"></script>
+    <script src="./js/particles.js-master/particles.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

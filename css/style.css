@@ -121,13 +121,27 @@ ul {
 
 
 .home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(../imgs/bg.jpg);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url(../imgs/bg.jpg);
     background-attachment: fixed;
-    background-position: 0 0;
+    background-position: 0 0; */
     overflow: hidden;
-    background-size: cover;
+    /* background-size: cover; */
     position: relative;
 }
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    /* Set the background color to black */
+    z-index: 2;
+    /* Ensure it's behind other content */
+}
+
+
 
 .section-content h1 {
     font-size: 3.4375rem;
@@ -138,21 +152,25 @@ ul {
 .section-content p {
     font-size: 4.5rem;
     margin-right: 10px;
+    height: 85px;
+    width: max-content;
 }
 
 
-.section-content p::after {
+/* .section-content p::after {
     content: '|';
     font-size: 2.5rem;
     font-weight: normal;
     font-size: 3.75rem;
     animation: typing 12s infinite linear 0s;
     margin-left: 10px;
-}
+} */
 
 @media (max-width: 767px) {
     .section-content p {
         font-size: 1.875rem;
+        height: 20px;
+
     }
 
     .section-content p::after {
@@ -160,506 +178,40 @@ ul {
     }
 }
 
+/* @keyframes typing {
 
-@keyframes typing {
-    0% {
-        content: 'D|';
-    }
-
-
-
-    1% {
-        content: 'De|';
-    }
-
-
-
-    2% {
-        content: 'Des|';
-    }
-
-
-
-    3% {
-        content: 'Desi|';
-    }
-
-
-
-    4% {
-        content: 'Desig|';
-    }
-
-
-
-    5% {
-        content: 'Design|';
-    }
-
-
-
-    6% {
-        content: 'Designe|';
-    }
-
-
-
-    7% {
-        content: 'Designer|';
-    }
-
-
-
-    8% {
-        content: 'Designer|';
-    }
-
-
-
-    9% {
-        content: 'Designer|';
-    }
-
-
-
+    0%,
     10% {
-        content: 'Designe|';
+        content: 'Ahmed Mamdouh|';
     }
 
-
-
-    11% {
-        content: 'Design|';
-    }
-
-
-    12% {
-        content: 'Desig|';
-    }
-
-
-
-    13% {
-        content: 'Desi|';
-    }
-
-
-
-    14% {
-        content: 'Des|';
-    }
-
-
-
-    15% {
-        content: 'De|';
-    }
-
-
-
-    16% {
-        content: 'D|';
-    }
-
-
-
-    17% {
-        content: '|';
-    }
-
-
-
-    18% {
-        content: 'D|';
-    }
-
-
-
-    19% {
-        content: 'De|';
-    }
-
-
-
-    20% {
-        content: 'Des|';
-    }
-
-
-
-    21% {
-        content: 'Desi|';
-    }
-
-
-
-    22% {
-        content: 'Desig|';
-    }
-
-
-
-    24% {
-        content: 'Design|';
-    }
-
-
-
-    25% {
-        content: 'Designe|';
-    }
-
-
-
-    26% {
-        content: 'Designer|';
-    }
-
-
-    27% {
-        content: 'Designer|';
-    }
-
-
-
-    28% {
-        content: 'Designer|';
-    }
-
-
-
-    29% {
-        content: 'Designe|';
-    }
-
-
-
+    20%,
     30% {
-        content: 'Design|';
+        content: 'Full Stack Developer|';
     }
 
-
-
-    31% {
-        content: 'Desig|';
-    }
-
-
-
-    32% {
-        content: 'Desi|';
-    }
-
-
-
-    33% {
-        content: 'Des|';
-    }
-
-
-
-    34% {
-        content: 'De|';
-    }
-
-
-
-    35% {
-        content: 'D|';
-    }
-
-
-
-    36% {
-        content: '|';
-    }
-
-
-
-    37% {
-        content: 'D|';
-    }
-
-
-
-    38% {
-        content: 'De|';
-    }
-
-
-
-    39% {
-        content: 'Dev|';
-    }
-
-
-
-    40% {
-        content: 'Deve|';
-    }
-
-
-
-    41% {
-        content: 'Devel|';
-    }
-
-
-
-    42% {
-        content: 'Develo|';
-    }
-
-
-
-    43% {
-        content: 'Develop|';
-    }
-
-
-
-    44% {
-        content: 'Develope|';
-    }
-
-
-
-    45% {
-        content: 'Developer|';
-    }
-
-
-
-    46% {
-        content: 'Develope|';
-    }
-
-
-
-    47% {
-        content: 'Develop|';
-    }
-
-
-
-    48% {
-        content: 'Develo|';
-    }
-
-
-
-    49% {
-        content: 'Devel|';
-    }
-
-
-
+    40%,
     50% {
-        content: 'Deve|';
-    }
-
-    51% {
-        content: 'Dev|';
-    }
-
-    52% {
-        content: 'De|';
-    }
-
-    53% {
-        content: 'D|';
-    }
-
-    54% {
-        content: 'D|';
-    }
-
-    55% {
-        content: '|';
-    }
-
-    56% {
-        content: 'F|';
-    }
-
-    57% {
-        content: 'Fr|';
-    }
-
-    58% {
-        content: 'Fre|';
-    }
-
-    59% {
-        content: 'Free|';
+        content: 'Web Designer|';
     }
 
     60% {
-        content: 'Freel|';
-    }
-
-    61% {
-        content: 'Freela|';
-    }
-
-    62% {
-        content: 'Freelan|';
-    }
-
-    63% {
-        content: 'Freelanc|';
-    }
-
-    64% {
-        content: 'Freelance|';
-    }
-
-    65% {
-        content: 'Freelancer|';
-    }
-
-    66% {
-        content: 'Freelance|';
-    }
-
-    67% {
-        content: 'Freelanc|';
-    }
-
-    68% {
-        content: 'Freelan|';
-    }
-
-    69% {
-        content: 'Freela|';
+        content: 'Ahmed Mamdouh|';
     }
 
     70% {
-        content: 'Freel|';
-    }
-
-    71% {
-        content: 'Free|';
-    }
-
-    72% {
-        content: 'Fre|';
-    }
-
-    73% {
-        content: 'Fr|';
-    }
-
-    74% {
-        content: 'F|';
-    }
-
-    75% {
-        content: 'L|';
-    }
-
-    76% {
-        content: 'La|';
-    }
-
-    77% {
-        content: 'Lar|';
-    }
-
-    78% {
-        content: 'Larr|';
-    }
-
-    79% {
-        content: 'Larry|';
+        content: 'Full Stack Developer|';
     }
 
     80% {
-        content: 'Larry |';
+        content: 'Web Designer|';
     }
 
-    81% {
-        content: 'Larry D|';
-    }
-
-    82% {
-        content: 'Larry Da|';
-    }
-
-    83% {
-        content: 'Larry Dan|';
-    }
-
-    84% {
-        content: 'Larry Dani|';
-    }
-
-    85% {
-        content: 'Larry Dania|';
-    }
-
-    86% {
-        content: 'Larry Danial|';
-    }
-
-    87% {
-        content: 'Larry Danials|';
-    }
-
-    88% {
-        content: 'Larry Danial|';
-    }
-
-    89% {
-        content: 'Larry Dania|';
-    }
-
-    90% {
-        content: 'Larry Dani|';
-    }
-
-    91% {
-        content: 'Larry Dan|';
-    }
-
-    92% {
-        content: 'Larry Da|';
-    }
-
-    93% {
-        content: 'Larry D|';
-    }
-
-    94% {
-        content: 'Larry |';
-    }
-
-    95% {
-        content: 'Larry|';
-    }
-
-    96% {
-        content: 'Larr|';
-    }
-
-    97% {
-        content: 'Lar|';
-    }
-
-    98% {
-        content: 'La|';
-    }
-
-    99% {
-        content: 'L|';
-    }
-
+    90%,
     100% {
         content: '|';
     }
-
-
-}
+} */
 
 .icons a span {
     background-color: #0000006b;
