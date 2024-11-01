@@ -23,6 +23,6 @@ var typed = new Typed('.element', {
 
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', './js/particles.js-master/package.json', function () {
+particlesJS.load('particles-js', './js/particles.js-master/demo/particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
