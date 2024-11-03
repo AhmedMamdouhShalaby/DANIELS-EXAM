@@ -16,7 +16,7 @@ var wow = new WOW(
 );
 wow.init();
 var typed = new Typed('.element', {
-    strings: ["Ahmed Mamdouh", "Full Stack Developer.", "Web Designer."],
+    strings: ["", "Ahmed Mamdouh", "Full Stack Developer.", "Web Designer."],
     typeSpeed: 30,
     loop: true,
 });
@@ -26,3 +26,19 @@ var typed = new Typed('.element', {
 particlesJS.load('particles-js', './js/particles.js-master/demo/particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
+const navCollapsing = document.getElementById('navbarSupportedContent')
+const titles = document.querySelectorAll('.title h2');
+function checkMe() {
+    setTimeout(() => {
+
+        if (navCollapsing.classList.contains('show')) {
+            console.log('inside nav true', navCollapsing, titles);
+
+            titles.forEach(title => title.classList.remove('position-relative'))
+        } else {
+            console.log('inside nav false', navCollapsing, titles);
+
+            titles.forEach(title => title.classList.add('position-relative'))
+        }
+    }, 500)
+}

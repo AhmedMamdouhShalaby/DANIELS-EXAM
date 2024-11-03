@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
     <link rel="icon" href="./imgs/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
@@ -18,37 +19,43 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-scrollspy">
 
-    <nav id="navbar-scrollspy" class="navbar navbar-expand-lg pt-3 fw-medium position-fixed w-100 z-3">
-        <div class="container-md container-fluid">
-            <a class="navbar-brand text-uppercase fw-bold text-white" href="#">daniels</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+    <nav id="navbar-scrollspy" class="navbar px-4 navbar-expand-lg pt-2 fw-medium position-fixed w-100 z-3">
+        <div class="container-fluid position-relative">
+            <div class="">
+                <a class="navbar-brand text-uppercase fw-bold text-white" href="#home"><img
+                        src="./imgs/Ahmed_Mamdouh__12_-removebg-preview.png" width="80" class="pt-2"
+                        alt="Ahmed Mamdouh Full Stack Developer" title="Ahmed Mamdouh Full Stack Developer"></a>
+
+
+            </div>
+            <button onclick="checkMe()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span><i class="fa-solid fa-bars text-white"></i></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse z-3" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link position-relative active mt-3 mx-2 mb-0" aria-current="page"
+                        <a class="nav-link position-relative active  mx-2 mb-0" aria-current="page"
                             href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative mt-3 mx-2 mb-0" href="#about">About</a>
+                        <a class="nav-link position-relative  mx-2 mb-0" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative mt-3 mx-2 mb-0" href="#services">Services</a>
+                        <a class="nav-link position-relative  mx-2 mb-0" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative mt-3 mx-2 mb-0" href="#works">Works</a>
+                        <a class="nav-link position-relative  mx-2 mb-0" href="#works">Works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative mt-3 mx-2 mb-0" href="#clients">Clients</a>
+                        <a class="nav-link position-relative  mx-2 mb-0" href="#clients">Clients</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative mt-3 mx-2 mb-0" href="#team">Team</a>
+                        <a class="nav-link position-relative  mx-2 mb-0" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link position-relative mt-3 mx-2 mb-0" href="#contact">Contact</a>
+                        <a class="nav-link position-relative  mx-2 mb-0" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -59,10 +66,10 @@
         <div id="particles-js"></div>
 
         <div
-            class="d-flex z-3 position-absolute top-50 start-50 translate-middle justify-content-center align-items-center text-center">
+            class="d-flex z-2 position-absolute top-50 start-50 translate-middle justify-content-center align-items-center text-center">
             <div class="section-content">
                 <h1 class="text-white text-capitalize fw-bolder pb-2">
-                    hello
+                    Hi! <span class="fs-4">i'm</span>
                 </h1>
                 <p class="element text-white text-capitalize pt-2 fw-lighter align-self-start">
                 </p>
@@ -81,7 +88,7 @@
             </div>
         </div>
     </header>
-    <section class="about py-5 wow slideInLeft" data-wow-duration="2s" data-wow-delay="1s" id="about">
+    <section class="about py-5 wow slideInLeft" data-wow-duration="2s" data-wow-offset="100" id="about">
         <div class="container-md container-fluid">
             <div class="row pt-5">
                 <div class="col-lg-5">
@@ -132,73 +139,76 @@
                 <h2 class="fw-bold  d-inline-block position-relative z-3 text-capitalize">servisec.</h2>
             </div>
             <div class="row">
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4 wow slideInLeft" data-wow-duration="2s" data-wow-offset="100">
                     <div
                         class="serv-card bg-white d-flex justify-content-center align-items-center flex-column py-5 px-3 text-center">
                         <span class="card-icon p-4 rounded-circle">
-                            <i class="fa-solid fa-laptop fs-4"></i>
+                            <i class="fa-solid fa-code fs-4"></i>
                         </span>
-                        <h6 class="text-capitalize fs-5 fw-bold pt-4">web design</h6>
-                        <p class="text-muted pt-2">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
-                            industry's standard dummy text ever</p>
+                        <h6 class="text-capitalize fs-5 fw-bold pt-4">frontend development</h6>
+                        <p class="text-muted pt-2">Expertise in building dynamic web applications using Angular,
+                            TypeScript, and responsive design techniques.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4 wow animate__backInDown" data-wow-duration="2s" data-wow-offset="100">
                     <div
                         class="serv-card bg-white d-flex justify-content-center align-items-center flex-column py-5 px-3 text-center">
                         <span class="card-icon p-4 rounded-circle">
-                            <i class="fa-solid fa-bullhorn fs-4"></i>
+                            <i class="fa-solid fa-database fs-4"></i>
                         </span>
-                        <h6 class="text-capitalize fs-5 fw-bold pt-4">branding</h6>
-                        <p class="text-muted pt-2">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
-                            industry's standard dummy text ever</p>
+                        <h6 class="text-capitalize fs-5 fw-bold pt-4">backend development</h6>
+                        <p class="text-muted pt-2">Skilled in creating robust APIs and back-end services with C#, .NET
+                            Core, and database management.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4 wow slideInRight" data-wow-duration="2s" data-wow-offset="100">
                     <div
                         class="serv-card bg-white d-flex justify-content-center align-items-center flex-column py-5 px-3 text-center">
                         <span class="card-icon p-4 rounded-circle">
-                            <i class="fa-solid fa-umbrella fs-4"></i>
+                            <i class="fa-solid fa-laptop-code fs-4"></i>
                         </span>
-                        <h6 class="text-capitalize fs-5 fw-bold pt-4">development</h6>
-                        <p class="text-muted pt-2">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
-                            industry's standard dummy text ever</p>
+                        <h6 class="text-capitalize fs-5 fw-bold pt-4">full stack solutions</h6>
+                        <p class="text-muted pt-2">Skilled in integrating front-end and back-end technologies for
+                            efficient full-stack solutions.</p>
+
                     </div>
                 </div>
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4 wow slideInLeft" data-wow-duration="2s" data-wow-offset="100">
                     <div
                         class="serv-card bg-white d-flex justify-content-center align-items-center flex-column py-5 px-3 text-center">
                         <span class="card-icon p-4 rounded-circle">
-                            <i class="fa-solid fa-gem fs-4"></i>
+                            <i class="fa-solid fa-project-diagram fs-4"></i>
                         </span>
-                        <h6 class="text-capitalize fs-5 fw-bold pt-4">creative design</h6>
-                        <p class="text-muted pt-2">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
-                            industry's standard dummy text ever</p>
+                        <h6 class="text-capitalize fs-5 fw-bold pt-4">project architecture</h6>
+                        <p class="text-muted pt-2">Experience in designing scalable application architectures for
+                            enterprise-level projects using modern best practices.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4 wow animate__backInUp" data-wow-duration="2s" data-wow-offset="100">
                     <div
                         class="serv-card bg-white d-flex justify-content-center align-items-center flex-column py-5 px-3 text-center">
                         <span class="card-icon p-4 rounded-circle">
-                            <i class="fa-solid fa-tv fs-4"></i>
+                            <i class="fa-solid fa-shield-alt fs-4"></i>
                         </span>
-                        <h6 class="text-capitalize fs-5 fw-bold pt-4">fully responsive</h6>
-                        <p class="text-muted pt-2">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
-                            industry's standard dummy text ever</p>
+                        <h6 class="text-capitalize fs-5 fw-bold pt-4">security implementation</h6>
+                        <p class="text-muted pt-2">Knowledge in implementing secure coding practices and ensuring
+                            application security using modern security protocols.</p>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-4">
+                <div class="col-lg-4 mt-4 wow slideInRight" data-wow-duration="2s" data-wow-offset="100">
                     <div
                         class="serv-card bg-white d-flex justify-content-center align-items-center flex-column py-5 px-3 text-center">
                         <span class="card-icon p-4 rounded-circle">
-                            <i class="fa-solid fa-camera fs-4"></i>
+                            <i class="fa-solid fa-tools fs-4"></i>
                         </span>
-                        <h6 class="text-capitalize fs-5 fw-bold pt-4">retina ready</h6>
-                        <p class="text-muted pt-2">Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the
-                            industry's standard dummy text ever</p>
+                        <h6 class="text-capitalize fs-5 fw-bold pt-4">problem-solving & debugging</h6>
+                        <p class="text-muted pt-2">Strong skills in troubleshooting, debugging complex issues, and
+                            optimizing code for performance and reliability in full-stack applications.</p>
+
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <section id="works" class="works">
@@ -228,15 +238,22 @@
                 tabindex="0">
                 <div class="container-md container-fluid">
                     <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 py-1 px-3">
+                        <div title="Soccer Dream Ecommerce Amireca" class="col-lg-4 col-md-6 py-1 px-3">
                             <div class="gallery-card">
-                                <img src="imgs/portfolio/1.jpg" class="w-100" alt="portfolio one">
+                                <img title="Soccer Dream Ecommerce Amireca"
+                                    src="imgs/WhatsApp Image 2024-10-19 at 01.35.05_3352e963 (1).jpg" height="350"
+                                    class="w-100" alt="portfolio one">
                                 <div class="overlay">
                                     <div class="overlay-info text-center">
                                         <div class="layer">
-                                            <h6>WEB DESIGN</h6>
+                                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                                <h5 class="projectName">Soccer Dream Amireca</h5>
+                                                <h6>WEB DESIGN</h6>
+                                            </div>
                                             <div class="icons">
-                                                <span><a href="#"><i class="fa-solid fa-link-slash"></i></a></span>
+                                                <span><a href="https://www.soccerdreamshop.com/#/home"
+                                                        title="go to web site" target="_blank"><i
+                                                            class="fa-solid fa-link-slash"></i></a></span>
                                                 <span><a href="#"><i
                                                             class="fa-solid fa-magnifying-glass-plus"></i></a></span>
                                             </div>
@@ -248,13 +265,19 @@
                         </div>
                         <div class="col-lg-4 col-md-6 py-1 px-3">
                             <div class="gallery-card">
-                                <img src="imgs/portfolio/2.jpg" class="w-100" alt="portfolio one">
+                                <img src="imgs/Screenshot 2024-11-04 002852 (1).png" height="350" class="w-100"
+                                    alt="portfolio one">
                                 <div class="overlay">
                                     <div class="overlay-info text-center">
                                         <div class="layer">
-                                            <h6>WEB DESIGN</h6>
+                                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                                <h5 class="projectName">Egypt Travel For You</h5>
+                                                <h6>WEB DESIGN</h6>
+                                            </div>
                                             <div class="icons">
-                                                <span><a href="#"><i class="fa-solid fa-link-slash"></i></a></span>
+                                                <span><a href="https://www.egypttravel4u.com/#/home"
+                                                        title="go to web site" target="_blank"><i
+                                                            class="fa-solid fa-link-slash"></i></a></span>
                                                 <span><a href="#"><i
                                                             class="fa-solid fa-magnifying-glass-plus"></i></a></span>
                                             </div>
@@ -266,13 +289,19 @@
                         </div>
                         <div class="col-lg-4 col-md-6 py-1 px-3">
                             <div class="gallery-card">
-                                <img src="imgs/portfolio/3.jpg" class="w-100" alt="portfolio one">
+                                <img src="imgs/Screenshot 2024-11-04 003641.png" height="350" class="w-100"
+                                    alt="portfolio one">
                                 <div class="overlay">
                                     <div class="overlay-info text-center">
                                         <div class="layer">
-                                            <h6>WEB DESIGN</h6>
+                                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                                <h5 class="projectName">Fresh Cart Ecommerce</h5>
+                                                <h6>WEB DESIGN</h6>
+                                            </div>
                                             <div class="icons">
-                                                <span><a href="#"><i class="fa-solid fa-link-slash"></i></a></span>
+                                                <span><a href="https://ahmedmamdouhshalaby.github.io/Ecommerce/home"
+                                                        title="go to web site" target="_blank"><i
+                                                            class="fa-solid fa-link-slash"></i></a></span>
                                                 <span><a href="#"><i
                                                             class="fa-solid fa-magnifying-glass-plus"></i></a></span>
                                             </div>
@@ -284,13 +313,19 @@
                         </div>
                         <div class="col-lg-4 col-md-6 py-1 px-3">
                             <div class="gallery-card">
-                                <img src="imgs/portfolio/4.jpg" class="w-100" alt="portfolio one">
+                                <img src="imgs/Screenshot 2024-11-04 004854.png" height="350" class="w-100"
+                                    alt="portfolio one">
                                 <div class="overlay">
                                     <div class="overlay-info text-center">
                                         <div class="layer">
-                                            <h6>WEB DESIGN</h6>
+                                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                                <h5 class="projectName">Devfolio Portofolio</h5>
+                                                <h6>WEB DESIGN</h6>
+                                            </div>
                                             <div class="icons">
-                                                <span><a href="#"><i class="fa-solid fa-link-slash"></i></a></span>
+                                                <span><a href="https://ahmedmamdouhshalaby.github.io/devfolio/"
+                                                        title="go to web site" target="_blank"><i
+                                                            class="fa-solid fa-link-slash"></i></a></span>
                                                 <span><a href="#"><i
                                                             class="fa-solid fa-magnifying-glass-plus"></i></a></span>
                                             </div>
@@ -302,13 +337,19 @@
                         </div>
                         <div class="col-lg-4 col-md-6 py-1 px-3">
                             <div class="gallery-card">
-                                <img src="imgs/portfolio/5.jpg" class="w-100" alt="portfolio one">
+                                <img src="imgs/Screenshot 2024-11-04 005138.png" height="350" class="w-100"
+                                    alt="portfolio one">
                                 <div class="overlay">
                                     <div class="overlay-info text-center">
                                         <div class="layer">
-                                            <h6>WEB DESIGN</h6>
+                                            <div class="d-flex justify-content-center align-items-center flex-column">
+                                                <h5 class="projectName">Mailfaiy Restaurant Portofolio</h5>
+                                                <h6>WEB DESIGN</h6>
+                                            </div>
                                             <div class="icons">
-                                                <span><a href="#"><i class="fa-solid fa-link-slash"></i></a></span>
+                                                <span><a href="https://ahmedmamdouhshalaby.github.io/Mailfaiy/"
+                                                        title="go to web site" target="_blank"><i
+                                                            class="fa-solid fa-link-slash"></i></a></span>
                                                 <span><a href="#"><i
                                                             class="fa-solid fa-magnifying-glass-plus"></i></a></span>
                                             </div>
